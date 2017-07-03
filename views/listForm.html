@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Express Practise</title>
+</head>
+
+<body>
+  <header>
+    {{> header}}
+  </header>
+
+  <p>List Items:</p>
+  <ol>
+    {{#each name}}
+    <li> {{this}} </li>
+    {{/each}}
+  </ol>
+  <br>
+  <br>
+  <hr>
+  <p>Add new item:</p>
+  <br>
+  <form action="/" method="post">
+    <input type="text" name="name">
+    <button type="submit" name="Enter value">Enter Value</button>
+  </form>
+
+  <footer>
+    {{> footer}}
+  </footer>
+
+</body>
+
+</html>
