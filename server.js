@@ -69,3 +69,34 @@ app.post('/', (req, res) => {
 app.listen(3000, () => {
   console.log("Server running on port 3000!!");
 })
+
+// req.params.attr // params passed to url
+// req.body.attr // using body - parser - for put, post
+// req.query.attr // params in the form of ?name=
+// app.param('attr', func) // order params body query
+// req.route // useful router info
+// req.get(headerName) // any header name
+// req.originalUrl() // retruns the actual url
+// req.cookies.attr // cookies related attr
+// req.accepts('text/html') // return a boolean
+// req.ip  // ip address
+// req.secure // if https is used
+// req.porotocol // http
+//
+// res.status();
+// res.set(header, value);
+// res.get(header);
+// res.cookie(key,value);
+// res.clearCookie(key);
+// res.redirect(status, path);
+// res.send(status, path);
+// res.json(status, path);
+// res.jsonp(status, path);
+// res.download(file);
+// res.render(file, props);
+
+// res.format({
+//   'text/html' : function(){},
+//   'text/plain': function(){},
+//   'application/json': function(){}
+// })
